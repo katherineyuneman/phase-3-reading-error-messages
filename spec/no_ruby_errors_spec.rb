@@ -1,5 +1,6 @@
 describe "Not having any errors and being all green" do
 
+  p NameError = "Hello World"
   describe 'NameError' do
     it 'raises a NameError when encountering undefined barewords' do
       expect { load './lib/a_name_error.rb' }.not_to raise_error
